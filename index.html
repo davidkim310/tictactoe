@@ -1,0 +1,49 @@
+
+Establish 'Game' class which manages who's turn it in, and the scoreboard
+Based on who's turn it is, mark an X or O based on click, and have it alternate
+Create a 'determine winner' function  if winner, update scoreboard accordingly
+Establish detailed game parameters, not allowing clicks on already clicked areas
+Implement reset button -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tic-Tac-Toe</title>
+
+    <h1>Tic Tac Toe</h1>
+    <link rel="stylesheet" href="styles.css" media="screen" title="no title" charset="utf-8">
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="js.js"></script>
+
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+  <h2>Player _, it's your turn!</h2>
+
+    <div id="board">
+    <table align="center">
+      <tr id="row1">
+        <td class="square" id="row1cell1"></td>
+        <td class="square center" id="row1cell2"></td>
+        <td class="square" id="row1cell3"></td>
+      </tr>
+      <tr id="row2">
+        <td class="square h" id = "row2cell1"></td>
+        <td class="square center h" id ="row2cell2"></td>
+        <td class="square h" id="row2cell3"></td>
+      </tr>
+      <tr id="row3">
+        <td class="square" id="row3cell1"></td>
+        <td class="square center" id="row3cell2"></td>
+        <td class="square" id="row3cell3"></td>
+      </tr>
+    </table>
+  </div>
+  <div class="button">
+<button type="button">Reset</button>
+</div>
+    </script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+.square{
+    width:100px;
+    height:100px;
+}
+
+.center{
+    border-left:1px solid #000;
+    border-right:1px solid #000;
+}
+
+.h{
+    border-top:1px solid #000;
+    border-bottom:1px solid #000;
+}
+
+.button {
+    text-align: center;
+    color: black;
+    padding: 10px 24px;
+}
+
+h1, h2, p, button {
+    text-align: center;
+    color: black;
+}
+
+.toggle1{
+  background-image: url("pic/ximage.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.toggle2{
+  background-image: url("pic/oimage.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
