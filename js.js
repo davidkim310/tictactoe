@@ -7,18 +7,22 @@ var obj = (function(){
             obj.reset();
         });
         $('td').on("click", function(e) {
+        console.log('click', clicked);
+        console.log("clicked:", e.target.id);
+        //if that cell is not in the array
           if(clicked.indexOf(e.target.id) === -1){
-            console.log("clicked, push to clicked");
             obj.nextPlayer(this);
+            //push that cell to the array
             clicked.push(e.target.id);
           }
         });
     };
 
-
     var reset= function() {
         $("td").removeClass("toggle1");
         $("td").removeClass("toggle2");
+        //empty out the array
+        clicked = [];
     };
 
 
