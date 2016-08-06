@@ -17,8 +17,8 @@ var obj = (function(){
 
 
     var reset= function() {
-        $("p").removeClass("intro");
-        $("p").removeClass("intro");
+        $("td").removeClass("toggle1");
+        $("td").removeClass("toggle2");
     };
 
 
@@ -26,13 +26,12 @@ var obj = (function(){
       console.log(eachToggle);
       if(!playerFlag){
         console.log("toogle O");
-        // $(eachToggle).text = "O";
-        $(eachToggle).toggleClass("toggle2");
+        $(eachToggle).addClass("toggle2");
 
       }
       else if(playerFlag){
         console.log("toggle X");
-        $(eachToggle).toggleClass("toggle1");
+        $(eachToggle).addClass("toggle1");
       }
       playerFlag = !playerFlag;
     };
